@@ -76,11 +76,6 @@ namespace SignalRStresser.Connection
                 {
                     Interlocked.Increment(ref _benchmarkContext.SuccessfulConnections);
                 }
-                else
-                {
-                    Interlocked.Decrement(ref _benchmarkContext.SuccessfulConnections);
-                    Interlocked.Increment(ref _benchmarkContext.DisconnectedConnections);
-                }
 
                 connectionTime.Stop();
 
@@ -152,7 +147,8 @@ namespace SignalRStresser.Connection
 
             if (!Connected)
             {
-                Interlocked.Increment(ref this._benchmarkContext.DisconnectedConnections);
+                Interlocked.Increment(ref _benchmarkContext.DisconnectedConnections);
+                Interlocked.Decrement(ref _benchmarkContext.SuccessfulConnections);
 
                 Restart();
                 return;

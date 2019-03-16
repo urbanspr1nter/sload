@@ -29,7 +29,7 @@ namespace SignalRStresser
             var keepAliveIntervalOption = cmdApp.Option("--keepAliveInterval", "Interval duration (ms) to maintain the TCP connection. Default: 2000.", CommandOptionType.SingleValue);
             var handshakeTimeoutOption = cmdApp.Option("--handshakeTimeout", "Duration (ms) before a timeout for handshake. Default: 60000.", CommandOptionType.SingleValue);
             var serverTimeoutOption = cmdApp.Option("--serverTimeout", "Duration (ms) before timing out from not hearing back from server. Default: 120000", CommandOptionType.SingleValue);
-            var agentNodePingIntervalOption = cmdApp.Option("--agentNodePingInterval", "Duration (ms) of ping-pong operation to and from workers.", CommandOptionType.SingleValue);
+            var agentNodePingIntervalOption = cmdApp.Option("--agentNodePingInterval", "Duration (ms) of ping-pong operation to and from workers. Default: 30000.", CommandOptionType.SingleValue);
 
             return new CommandOptions
             {
