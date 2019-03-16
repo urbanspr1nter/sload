@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRStresser", "SignalRStresser\SignalRStresser.csproj", "{EC30BF9A-733F-43FF-8725-5594B2CE27FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Debug|x64.ActiveCfg = Debug|x64
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Debug|x64.Build.0 = Debug|x64
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Release|x64.ActiveCfg = Release|x64
+		{EC30BF9A-733F-43FF-8725-5594B2CE27FB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC9F604C-5F53-4598-A261-8FD5E3D07255}
+	EndGlobalSection
+EndGlobal
