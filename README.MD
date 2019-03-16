@@ -6,9 +6,11 @@ An ASP.NET Core SignalR load testing utility.
 
 **sload**, or formerly known as **SignalRStresser** is a load testing utility designed to work in a distributed manner. Basically a master node invokes many tests on several agents, and these agents will perform the tests, and report back the results to the master.
 
-If you have a server, and want to be able to test a bunch of concurrent connections to the SignalR hub hosted on it to see if the correct amount of resources have been provisioned for it.
+If you have a server, and want to be able to test a bunch of concurrent connections to the SignalR hub hosted on it, you can use sload's load testing capabilities to see if the correct amount of virtual, or physical resources have been provisioned for it.
 
 This project also comes with a `TestHub` project so that if desired, one can load a simple hub on the server to verify if everything is working correctly. Or, you can use it to actually apply the load test.
+
+This has been used extensively to test not only direct connections to a native hub on a physical server, but also has been used to test the [Azure SignalR service](https://azure.microsoft.com/en-us/services/signalr-service/) to measure the relative performance between self-hosted backplane infrastructure as opposed to a cloud-based one.
 
 ## Usage
 
